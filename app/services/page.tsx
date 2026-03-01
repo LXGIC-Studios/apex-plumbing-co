@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { icon: "💧", title: "Leak Repair", description: "From dripping faucets to hidden slab leaks, we locate and fix leaks fast to prevent costly water damage." },
-  { icon: "🔩", title: "Pipe Replacement", description: "Corroded or outdated pipes? We replace galvanized, copper, and PVC piping with modern, durable materials." },
-  { icon: "🛁", title: "Bathroom Remodeling", description: "Upgrade your bathroom with new fixtures, tiling, and plumbing layouts. We handle the entire plumbing scope." },
-  { icon: "🏗️", title: "Sewer Line Service", description: "Camera inspections, trenchless repair, and full sewer line replacement. We solve the toughest underground problems." },
-  { icon: "🔥", title: "Water Heater Install/Repair", description: "Tank and tankless water heater installation, repair, and maintenance. Same-day service on most models." },
-  { icon: "🔧", title: "Drain Cleaning", description: "Professional hydro-jetting and snake services for stubborn clogs in kitchens, bathrooms, and main lines." },
-  { icon: "🚿", title: "Fixture Installation", description: "Sinks, toilets, showers, tubs, and garbage disposals installed right the first time with full warranty." },
-  { icon: "💎", title: "Water Filtration", description: "Whole-home and under-sink water filtration systems for cleaner, better-tasting water throughout your home." },
+  { icon: "LR", title: "Leak Repair", description: "From dripping faucets to hidden slab leaks, we locate and fix leaks fast to prevent costly water damage." },
+  { icon: "PR", title: "Pipe Replacement", description: "Corroded or outdated pipes? We replace galvanized, copper, and PVC piping with modern, durable materials." },
+  { icon: "BR", title: "Bathroom Remodeling", description: "Upgrade your bathroom with new fixtures, tiling, and plumbing layouts. We handle the entire plumbing scope." },
+  { icon: "SL", title: "Sewer Line Service", description: "Camera inspections, trenchless repair, and full sewer line replacement. We solve the toughest underground problems." },
+  { icon: "WH", title: "Water Heater Install/Repair", description: "Tank and tankless water heater installation, repair, and maintenance. Same-day service on most models." },
+  { icon: "DC", title: "Drain Cleaning", description: "Professional hydro-jetting and snake services for stubborn clogs in kitchens, bathrooms, and main lines." },
+  { icon: "FI", title: "Fixture Installation", description: "Sinks, toilets, showers, tubs, and garbage disposals installed right the first time with full warranty." },
+  { icon: "WF", title: "Water Filtration", description: "Whole-home and under-sink water filtration systems for cleaner, better-tasting water throughout your home." },
 ];
 
 export default function Services() {

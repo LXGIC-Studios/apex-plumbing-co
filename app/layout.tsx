@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-white text-gray-800`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="pt-16 md:pt-20">{children}</main>
         <Footer />
         {/* Sticky mobile phone bar */}
         <div className="fixed bottom-0 left-0 right-0 bg-navy text-white py-3 px-4 flex items-center justify-center gap-3 md:hidden z-50">

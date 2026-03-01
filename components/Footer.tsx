@@ -20,14 +20,14 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-lg mb-3">Contact</h4>
           <div className="text-sm text-gray-300 space-y-1">
-            <p>📞 <a href="tel:5552345678" className="hover:text-white">(555) 234-5678</a></p>
-            <p>✉️ info@apexplumbingco.com</p>
-            <p>🕐 Mon–Sat: 7AM–8PM | Sun: Emergency Only</p>
+            <p>Phone: <a href="tel:5552345678" className="hover:text-white">(555) 234-5678</a></p>
+            <p>Email: info@apexplumbingco.com</p>
+            <p>Hours: Mon&ndash;Sat: 7AM&ndash;8PM | Sun: Emergency Only</p>
           </div>
         </div>
       </div>
       <div className="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-white/20 text-center text-sm text-gray-400">
-        <p>© {new Date().getFullYear()} Apex Plumbing Co. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Apex Plumbing Co. All rights reserved.</p>
         <p className="mt-1">Built by <a href="https://lxgicstudios.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:underline">LXGIC Studios</a></p>
       </div>
     </footer>

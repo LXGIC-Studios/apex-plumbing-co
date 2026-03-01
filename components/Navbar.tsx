@@ -5,8 +5,8 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-40">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-6xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-navy">
           Apex Plumbing Co.
         </Link>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </button>
       </div>
       {open && (
-        <nav className="md:hidden border-t px-4 pb-4 flex flex-col gap-3 text-sm font-medium">
+        <nav className="md:hidden border-t bg-white px-4 pb-4 flex flex-col gap-3 text-sm font-medium">
           <Link href="/" onClick={() => setOpen(false)} className="py-2 hover:text-orange">Home</Link>
           <Link href="/services" onClick={() => setOpen(false)} className="py-2 hover:text-orange">Services</Link>
           <Link href="/about" onClick={() => setOpen(false)} className="py-2 hover:text-orange">About</Link>

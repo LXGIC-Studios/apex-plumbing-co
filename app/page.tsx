@@ -12,12 +12,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-navy mb-10">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard icon="🚨" title="Emergency Repairs" description="Burst pipes, overflows, and urgent leaks — we're here 24/7 when you need us most." />
-            <ServiceCard icon="🔧" title="Drain Cleaning" description="Slow drains or full blockages, our team clears them fast with professional equipment." />
-            <ServiceCard icon="🔥" title="Water Heater Installation" description="Tank or tankless, we install and repair all major brands with same-day service." />
+            <ServiceCard icon="24/7" title="Emergency Repairs" description="Burst pipes, overflows, and urgent leaks — we're here 24/7 when you need us most." />
+            <ServiceCard icon="DC" title="Drain Cleaning" description="Slow drains or full blockages, our team clears them fast with professional equipment." />
+            <ServiceCard icon="WH" title="Water Heater Installation" description="Tank or tankless, we install and repair all major brands with same-day service." />
           </div>
           <div className="text-center mt-8">
-            <a href="/services" className="text-orange font-semibold hover:underline">View All Services →</a>
+            <a href="/services" className="text-orange font-semibold hover:underline">View All Services &rarr;</a>
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function Home() {
           <p className="text-lg mb-6">Available 24/7 for emergencies. Free estimates on all major jobs.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:5552345678" className="bg-white text-navy px-8 py-3 rounded font-bold text-lg hover:bg-gray-100 transition">
-              📞 (555) 234-5678
+              (555) 234-5678
             </a>
             <a href="/contact" className="border-2 border-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-orange transition">
               Book Online

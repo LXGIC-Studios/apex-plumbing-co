@@ -8,7 +8,9 @@ interface ServiceCardProps {
 export default function ServiceCard({ icon, title, description, showButton = false }: ServiceCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-      <div className="text-4xl mb-4">{icon}</div>
+      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-orange/10 flex items-center justify-center">
+        <span className="text-orange font-bold text-lg">{icon}</span>
+      </div>
       <h3 className="text-xl font-bold text-navy mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
       {showButton && (

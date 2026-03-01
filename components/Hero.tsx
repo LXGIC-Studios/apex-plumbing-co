@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="tel:5552345678" className="bg-white text-navy px-8 py-3 rounded font-bold text-lg hover:bg-gray-100 transition">
-            📞 (555) 234-5678
+            (555) 234-5678
           </a>
           <a href="/contact" className="bg-orange px-8 py-3 rounded font-bold text-lg hover:bg-orange-hover transition">
             Book Now

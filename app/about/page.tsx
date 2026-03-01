@@ -42,12 +42,14 @@ export default function About() {
           <h2 className="text-2xl font-bold text-center text-navy mb-10">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: "⏰", title: "On-Time Guarantee", desc: "We respect your time. If we're late, your service call is free." },
-              { icon: "💲", title: "Upfront Pricing", desc: "No surprises. We quote the job before we start, and the price is the price." },
-              { icon: "✨", title: "Clean Worksite", desc: "We leave your home cleaner than we found it. Drop cloths, booties, and a thorough cleanup — every time." },
+              { icon: "OT", title: "On-Time Guarantee", desc: "We respect your time. If we're late, your service call is free." },
+              { icon: "UP", title: "Upfront Pricing", desc: "No surprises. We quote the job before we start, and the price is the price." },
+              { icon: "CW", title: "Clean Worksite", desc: "We leave your home cleaner than we found it. Drop cloths, booties, and a thorough cleanup — every time." },
             ].map((v) => (
               <div key={v.title} className="bg-white rounded-lg shadow-md p-6 text-center">
-                <div className="text-4xl mb-4">{v.icon}</div>
+                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-orange/10 flex items-center justify-center">
+                  <span className="text-orange font-bold text-lg">{v.icon}</span>
+                </div>
                 <h3 className="text-xl font-bold text-navy mb-2">{v.title}</h3>
                 <p className="text-gray-600">{v.desc}</p>
               </div>
@@ -61,12 +63,12 @@ export default function About() {
           <h2 className="text-2xl font-bold text-center text-navy mb-10">Meet the Team</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { name: "Mike Carter", role: "Owner & Master Plumber" },
-              { name: "Jessica Carter", role: "Operations Manager" },
-              { name: "David Chen", role: "Lead Technician" },
+              { name: "Mike Carter", role: "Owner & Master Plumber", initials: "MC" },
+              { name: "Jessica Carter", role: "Operations Manager", initials: "JC" },
+              { name: "David Chen", role: "Lead Technician", initials: "DC" },
             ].map((t) => (
               <div key={t.name} className="text-center">
-                <div className="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 flex items-center justify-center text-4xl text-gray-400">👤</div>
+                <div className="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-gray-500">{t.initials}</div>
                 <h3 className="font-bold text-navy">{t.name}</h3>
                 <p className="text-gray-600 text-sm">{t.role}</p>
               </div>
