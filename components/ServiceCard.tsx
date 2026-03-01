@@ -7,14 +7,15 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ icon, title, description, showButton = false }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-orange/10 flex items-center justify-center">
-        <span className="text-orange font-bold text-lg">{icon}</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-orange scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+      <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-orange/10 flex items-center justify-center group-hover:bg-orange/20 transition-colors duration-300">
+        <span className="text-orange font-black text-xl">{icon}</span>
       </div>
-      <h3 className="text-xl font-bold text-navy mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+      <h3 className="text-xl font-black text-navy mb-3">{title}</h3>
+      <p className="text-gray-600 leading-relaxed mb-5">{description}</p>
       {showButton && (
-        <a href="/contact" className="inline-block bg-orange text-white px-6 py-2 rounded font-semibold text-sm hover:bg-orange-hover transition">
+        <a href="/contact" className="inline-block bg-orange text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-orange-hover hover:shadow-lg transition-all duration-300 min-h-[48px] leading-[48px] py-0">
           Schedule Service
         </a>
       )}

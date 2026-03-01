@@ -2,24 +2,24 @@
 
 export default function ContactForm() {
   return (
-    <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+    <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-1">Name *</label>
-        <input id="name" type="text" required className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange" />
+        <label htmlFor="name" className="block text-sm font-bold text-navy mb-2">Name *</label>
+        <input id="name" type="text" required className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all min-h-[48px]" />
       </div>
-      <div className="grid sm:grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium mb-1">Phone *</label>
-          <input id="phone" type="tel" required className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange" />
+          <label htmlFor="phone" className="block text-sm font-bold text-navy mb-2">Phone *</label>
+          <input id="phone" type="tel" required className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all min-h-[48px]" />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-          <input id="email" type="email" className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange" />
+          <label htmlFor="email" className="block text-sm font-bold text-navy mb-2">Email</label>
+          <input id="email" type="email" className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all min-h-[48px]" />
         </div>
       </div>
       <div>
-        <label htmlFor="service" className="block text-sm font-medium mb-1">Service Needed</label>
-        <select id="service" className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange">
+        <label htmlFor="service" className="block text-sm font-bold text-navy mb-2">Service Needed</label>
+        <select id="service" className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all min-h-[48px]">
           <option value="">Select a service...</option>
           <option>Leak Repair</option>
           <option>Pipe Replacement</option>
@@ -34,10 +34,10 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-        <textarea id="message" rows={4} className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange" />
+        <label htmlFor="message" className="block text-sm font-bold text-navy mb-2">Message</label>
+        <textarea id="message" rows={4} className="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all" />
       </div>
-      <button type="submit" className="bg-orange text-white px-8 py-3 rounded font-bold text-lg hover:bg-orange-hover transition w-full sm:w-auto">
+      <button type="submit" className="bg-orange text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-orange-hover hover:shadow-lg transition-all duration-300 w-full sm:w-auto min-h-[56px]">
         Send Request
       </button>
     </form>

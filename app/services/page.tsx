@@ -21,14 +21,16 @@ const services = [
 export default function Services() {
   return (
     <>
-      <section className="bg-navy text-white py-16">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h1>
-          <p className="text-gray-200 text-lg">Professional plumbing solutions for every need</p>
+      <section className="relative bg-navy text-white py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/50 to-navy" />
+        <div className="relative max-w-6xl mx-auto px-6 text-center">
+          <p className="text-orange font-semibold text-sm uppercase tracking-widest mb-4">What We Do</p>
+          <h1 className="text-4xl md:text-6xl font-black mb-6">Our Services</h1>
+          <p className="text-gray-300 text-xl max-w-2xl mx-auto">Professional plumbing solutions for every need</p>
         </div>
       </section>
-      <section className="py-16 bg-gray-bg">
-        <div className="max-w-6xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="py-24 bg-gray-bg">
+        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) => (
             <ServiceCard key={s.title} {...s} showButton />
           ))}
