@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #1e3a5f;
-  --color-navy-light: #2a4f7a;
-  --color-navy-dark: #0f1f33;
-  --color-orange: #ff6b35;
-  --color-orange-hover: #e55a2b;
-  --color-gray-bg: #f8f9fa;
+  --color-navy: #1B3A5C;
+  --color-navy-light: #244a72;
+  --color-navy-dark: #0f2136;
+  --color-orange: #E8762A;
+  --color-orange-hover: #d06824;
+  --color-gray-bg: #F5F5F5;
 }
 
-/* Premium base styles */
 html {
   scroll-behavior: smooth;
 }
@@ -19,12 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Premium transitions on all interactive elements */
 a, button, input, select, textarea {
   transition: all 300ms ease;
 }
 
-/* Section dividers */
 .section-divider {
   border: none;
   height: 1px;
