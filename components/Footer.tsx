@@ -2,43 +2,38 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-dark text-white pt-16 pb-8">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10 mb-12">
-        <div className="md:col-span-1">
-          <h4 className="font-black text-2xl mb-4">Apex Plumbing Co.</h4>
-          <p className="text-gray-400 leading-relaxed">Fast, honest, affordable plumbing in Nashville. Licensed and insured since 2012.</p>
-        </div>
+    <footer className="bg-[#1B3A5C] text-white">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Left */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-widest text-orange mb-5">Services</h4>
-          <nav className="flex flex-col gap-3 text-gray-400">
-            <Link href="/services" className="hover:text-white transition-colors duration-300">Emergency Repairs</Link>
-            <Link href="/services" className="hover:text-white transition-colors duration-300">Drain Cleaning</Link>
-            <Link href="/services" className="hover:text-white transition-colors duration-300">Water Heaters</Link>
-            <Link href="/services" className="hover:text-white transition-colors duration-300">Pipe Replacement</Link>
-          </nav>
+          <h3 className="font-black text-xl mb-3">Apex Plumbing Co.</h3>
+          <p className="text-white/70 text-sm mb-4">
+            Licensed &amp; insured plumbing services for Nashville and surrounding areas.
+          </p>
+          <p className="text-white/60 text-sm">123 Commerce St, Nashville, TN 37203</p>
+          <p className="text-white/60 text-sm mt-1">License #12345</p>
         </div>
+        {/* Right */}
         <div>
-          <h4 className="font-bold text-sm uppercase tracking-widest text-orange mb-5">Company</h4>
-          <nav className="flex flex-col gap-3 text-gray-400">
-            <Link href="/" className="hover:text-white transition-colors duration-300">Home</Link>
-            <Link href="/services" className="hover:text-white transition-colors duration-300">Services</Link>
-            <Link href="/about" className="hover:text-white transition-colors duration-300">About</Link>
-            <Link href="/contact" className="hover:text-white transition-colors duration-300">Contact</Link>
-          </nav>
-        </div>
-        <div>
-          <h4 className="font-bold text-sm uppercase tracking-widest text-orange mb-5">Contact</h4>
-          <div className="text-gray-400 space-y-3">
-            <p><a href="tel:5552345678" className="text-white font-bold text-lg hover:text-orange transition-colors duration-300">(555) 234-5678</a></p>
-            <p>info@apexplumbingco.com</p>
-            <p>Mon - Sat: 7AM - 8PM</p>
-            <p>Sun: Emergency Only</p>
+          <div className="flex flex-col gap-2 mb-4">
+            <Link href="/" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Home</Link>
+            <Link href="/services" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Services</Link>
+            <Link href="/about" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">About</Link>
+            <Link href="/contact" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Contact</Link>
           </div>
+          <p className="text-white/70 text-sm">(555) 234-5678</p>
+          <p className="text-white/70 text-sm">info@apexplumbingco.com</p>
+          <p className="text-white/70 text-sm mt-1">Mon-Fri 7am-6pm | Emergency 24/7</p>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Apex Plumbing Co. All rights reserved.</p>
-        <p>Built by <a href="https://lxgicstudios.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:underline transition-colors duration-300">LXGIC Studios</a></p>
+      {/* Bottom credit */}
+      <div className="border-t border-white/20 py-4 text-center">
+        <p className="text-white/50 text-xs">
+          Built by{" "}
+          <a href="https://lxgicstudios.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-300">
+            LXGIC Studios
+          </a>
+        </p>
       </div>
     </footer>
   );

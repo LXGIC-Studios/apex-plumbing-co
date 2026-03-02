@@ -1,111 +1,114 @@
 import type { Metadata } from "next";
-import { WrenchIcon, DropletIcon, FlameIcon, PipeIcon, ShowerIcon, SewerIcon } from "@/components/Icons";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Services | Apex Plumbing Co.",
-  description: "Full-service plumbing in Nashville: emergency repairs, drain cleaning, water heaters, pipe replacement, bathroom plumbing, and sewer line service.",
+  title: "Services | Apex Plumbing Co.",
+  description: "Emergency repairs, drain cleaning, water heater installation, pipe replacement, bathroom plumbing, and sewer line service in Nashville.",
+  openGraph: { title: "Services | Apex Plumbing Co.", description: "Full-service plumbing for Nashville homes and businesses." },
 };
 
 const services = [
   {
-    icon: <WrenchIcon className="w-10 h-10 text-orange" />,
     title: "Emergency Repairs",
-    description: "When a pipe bursts at 2am or your toilet overflows during dinner, you need a plumber you can count on. Our emergency team is available 24/7, 365 days a year with an average response time of under 45 minutes.",
-    problems: ["Burst or frozen pipes", "Sewage backups", "Overflowing toilets", "Major water leaks", "No hot water"],
+    image: "/images/emergency-repair.jpg",
+    description: "When a pipe bursts or a fixture fails, every minute counts. Our emergency team is on call 24/7, 365 days a year. We arrive fast, diagnose the problem, and get it fixed right the first time.",
+    problems: ["Burst or frozen pipes", "Overflowing toilets", "Major leaks and water damage", "Gas line emergencies", "No hot water"],
   },
   {
-    icon: <DropletIcon className="w-10 h-10 text-orange" />,
     title: "Drain Cleaning",
-    description: "Slow drains and stubborn clogs are more than an inconvenience. Left untreated, they can lead to pipe damage and sewage backups. We use professional hydro-jetting and mechanical snake equipment to clear any blockage.",
-    problems: ["Slow-draining sinks or tubs", "Recurring clogs", "Gurgling drains", "Foul drain odors", "Multiple clogged fixtures"],
+    image: "/images/drain-cleaning.jpg",
+    description: "Slow drains are more than an inconvenience — they can lead to backups and water damage. We use professional-grade equipment including hydro-jetting and camera inspection to clear even the toughest clogs.",
+    problems: ["Slow kitchen or bathroom drains", "Recurring clogs", "Foul odors from drains", "Multiple fixtures backing up", "Tree root intrusion"],
   },
   {
-    icon: <FlameIcon className="w-10 h-10 text-orange" />,
     title: "Water Heater Installation",
-    description: "Whether you need a new tank water heater or want to upgrade to a tankless system, we install and service all major brands. Same-day installation available on most models with full manufacturer warranty.",
-    problems: ["No hot water", "Inconsistent water temperature", "Rusty or discolored water", "Leaking water heater", "High energy bills from old unit"],
+    image: "/images/water-heater.jpg",
+    description: "Whether you need a new tank water heater or want to upgrade to tankless, we handle the full installation including permits and disposal of your old unit. We work with all major brands.",
+    problems: ["No hot water or inconsistent temperature", "Rusty or discolored water", "Leaking water heater", "High energy bills from old unit", "Strange noises from tank"],
   },
   {
-    icon: <PipeIcon className="w-10 h-10 text-orange" />,
     title: "Pipe Replacement",
-    description: "Old galvanized or corroded pipes can cause low water pressure, discolored water, and eventual leaks. We replace outdated piping with modern, durable materials like PEX and copper to protect your home for decades.",
-    problems: ["Low water pressure", "Discolored water", "Frequent leaks", "Old galvanized pipes", "Pinhole leaks in copper"],
+    image: "/images/pipe-replacement.jpg",
+    description: "Aging pipes corrode, crack, and fail. We replace old galvanized, polybutylene, and cast iron pipes with modern PEX and copper. Minimal disruption, clean worksite, lasting results.",
+    problems: ["Low water pressure throughout house", "Discolored water", "Frequent leaks in older pipes", "Visible corrosion", "Lead pipe concerns"],
   },
   {
-    icon: <ShowerIcon className="w-10 h-10 text-orange" />,
     title: "Bathroom Plumbing",
-    description: "From installing a new shower to a complete bathroom remodel, we handle every aspect of bathroom plumbing. Fixtures, supply lines, drains, and venting done right the first time with a clean, professional finish.",
-    problems: ["Leaking shower or tub", "Running toilet", "Dripping faucets", "Poor water pressure in bathroom", "Outdated fixtures needing replacement"],
+    image: "/images/bathroom-plumbing.jpg",
+    description: "From simple fixture swaps to full bathroom remodels, we handle every aspect of bathroom plumbing. Toilets, showers, tubs, vanities, and supply lines installed to code.",
+    problems: ["Running or leaking toilet", "Low shower pressure", "Dripping faucets", "Bathroom remodel plumbing rough-in", "Tub and shower valve replacement"],
   },
   {
-    icon: <SewerIcon className="w-10 h-10 text-orange" />,
     title: "Sewer Line Service",
-    description: "Sewer line problems are serious and need expert attention. We offer camera inspections to diagnose issues, trenchless repair options to minimize yard disruption, and complete sewer line replacement when necessary.",
-    problems: ["Sewage smell in yard", "Multiple drain backups", "Soggy patches in lawn", "Tree root intrusion", "Aging clay or cast iron sewer pipes"],
+    image: "/images/sewer-service.jpg",
+    description: "Sewer problems are serious. We use camera inspection to pinpoint the issue, then offer trenchless repair or traditional replacement depending on the situation. Full transparency, fair pricing.",
+    problems: ["Sewage backup in home", "Gurgling drains", "Wet spots in yard", "Foul smell outdoors", "Slow drains throughout house"],
   },
 ];
 
-export default function Services() {
+export default function ServicesPage() {
   return (
-    <>
-      <section className="relative bg-navy text-white py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/50 to-navy" />
-        <div className="relative max-w-6xl mx-auto px-6 text-center">
-          <p className="text-orange font-semibold text-sm uppercase tracking-widest mb-4">What We Do</p>
-          <h1 className="text-4xl md:text-6xl font-black mb-6">Our Services</h1>
-          <p className="text-gray-300 text-xl max-w-2xl mx-auto">Professional plumbing solutions for every need</p>
-        </div>
+    <main className="pt-[calc(2.5rem+4rem)]">
+      <section className="bg-[#1B3A5C] py-16 text-center">
+        <h1 className="text-4xl md:text-5xl font-black text-white">Our Services</h1>
+        <p className="text-white/70 mt-3 max-w-xl mx-auto">Professional plumbing solutions for every need. All work guaranteed.</p>
       </section>
 
-      <section className="py-24 bg-gray-bg">
-        <div className="max-w-6xl mx-auto px-6 space-y-12">
-          {services.map((s) => (
-            <div key={s.title} className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 md:p-10 hover:shadow-lg transition-all duration-300">
-              <div className="flex items-start gap-6">
-                <div className="w-20 h-20 rounded-full bg-orange/10 flex items-center justify-center flex-shrink-0 hidden md:flex">
-                  {s.icon}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center md:hidden">
-                      {s.icon}
-                    </div>
-                    <h2 className="text-2xl md:text-3xl font-black text-navy">{s.title}</h2>
+      {services.map((service, i) => {
+        const imageLeft = i % 2 === 0;
+        return (
+          <section key={service.title} className={i % 2 === 1 ? "bg-[#F5F5F5]" : ""}>
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
+              {imageLeft ? (
+                <>
+                  <div className="md:w-[45%] relative min-h-[300px]">
+                    <Image src={service.image} alt={service.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 45vw" />
                   </div>
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6">{s.description}</p>
-                  <div className="mb-6">
-                    <h3 className="font-bold text-navy mb-3">Common Problems We Solve:</h3>
-                    <ul className="grid sm:grid-cols-2 gap-2">
-                      {s.problems.map((p) => (
-                        <li key={p} className="flex items-center gap-2 text-gray-600">
-                          <svg className="w-4 h-4 text-orange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
+                  <div className="md:w-[55%] px-6 md:px-14 py-10 flex flex-col justify-center">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-4">{service.title}</h2>
+                    <p className="text-[#1B3A5C]/70 mb-5 leading-relaxed">{service.description}</p>
+                    <h4 className="font-semibold text-[#1B3A5C] mb-2">Common problems we solve:</h4>
+                    <ul className="space-y-1.5 mb-6">
+                      {service.problems.map((p) => (
+                        <li key={p} className="flex items-start gap-2 text-[#1B3A5C]/70 text-sm">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#E8762A] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                           {p}
                         </li>
                       ))}
                     </ul>
+                    <Link href="/contact" className="bg-[#E8762A] text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity duration-300 self-start">
+                      Call for a Free Estimate
+                    </Link>
                   </div>
-                  <a href="/contact" className="inline-block bg-orange text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-hover hover:shadow-lg transition-all duration-300">
-                    Call for a Free Estimate
-                  </a>
-                </div>
-              </div>
+                </>
+              ) : (
+                <>
+                  <div className="md:w-[55%] px-6 md:px-14 py-10 flex flex-col justify-center order-2 md:order-1">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-4">{service.title}</h2>
+                    <p className="text-[#1B3A5C]/70 mb-5 leading-relaxed">{service.description}</p>
+                    <h4 className="font-semibold text-[#1B3A5C] mb-2">Common problems we solve:</h4>
+                    <ul className="space-y-1.5 mb-6">
+                      {service.problems.map((p) => (
+                        <li key={p} className="flex items-start gap-2 text-[#1B3A5C]/70 text-sm">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#E8762A] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href="/contact" className="bg-[#E8762A] text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity duration-300 self-start">
+                      Call for a Free Estimate
+                    </Link>
+                  </div>
+                  <div className="md:w-[45%] relative min-h-[300px] order-1 md:order-2">
+                    <Image src={service.image} alt={service.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 45vw" />
+                  </div>
+                </>
+              )}
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-navy py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">Plumbing Emergency? Don&apos;t Wait.</h2>
-          <p className="text-xl mb-8 text-gray-300">Call us now for fast, reliable service.</p>
-          <a href="tel:5552345678" className="inline-block bg-orange text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-orange-hover hover:shadow-xl hover:scale-105 transition-all duration-300">
-            Call Now - (555) 234-5678
-          </a>
-        </div>
-      </section>
-    </>
+          </section>
+        );
+      })}
+    </main>
   );
 }
