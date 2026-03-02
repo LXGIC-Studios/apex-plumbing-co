@@ -18,7 +18,7 @@ const services = [
   {
     title: "Drain Cleaning",
     image: "/images/drain-cleaning.jpg",
-    description: "Slow drains are more than an inconvenience — they can lead to backups and water damage. We use professional-grade equipment including hydro-jetting and camera inspection to clear even the toughest clogs.",
+    description: "Slow drains are more than an inconvenience and they can lead to backups and water damage. We use professional-grade equipment including hydro-jetting and camera inspection to clear even the toughest clogs.",
     problems: ["Slow kitchen or bathroom drains", "Recurring clogs", "Foul odors from drains", "Multiple fixtures backing up", "Tree root intrusion"],
   },
   {

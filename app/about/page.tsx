@@ -33,7 +33,7 @@ export default function AboutPage() {
             Apex Plumbing Co. started in 2012 with a single truck and a simple promise: show up on time, do honest work, and charge a fair price. What began as a one-man operation has grown into one of Nashville&apos;s most trusted plumbing companies.
           </p>
           <p className="text-[#1B3A5C]/70 leading-relaxed mb-4">
-            We&apos;re still family-owned. Every plumber on our team is someone we&apos;d trust in our own home. We hire for character and train for skill. That&apos;s why our customers keep coming back — and keep referring their neighbors.
+            We&apos;re still family-owned. Every plumber on our team is someone we&apos;d trust in our own home. We hire for character and train for skill. That&apos;s why our customers keep coming back and keep referring their neighbors.
           </p>
           <p className="text-[#1B3A5C]/70 leading-relaxed">
             Over 5,000 jobs later, we still answer our own phone, still show up when we say we will, and still stand behind every repair with a full satisfaction guarantee.

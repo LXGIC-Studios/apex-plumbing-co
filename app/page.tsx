@@ -24,13 +24,13 @@ const areas = ["Nashville", "Brentwood", "Franklin", "Green Hills", "East Nashvi
 export default function Home() {
   return (
     <main className="pt-[calc(2.5rem+4rem)]">
-      {/* Hero — Split Layout */}
+      {/* Hero Split Layout */}
       <section className="relative">
         <div className="flex flex-col md:flex-row">
           {/* Left side */}
           <div className="bg-[#1B3A5C] md:w-[55%] px-6 md:px-16 py-16 md:py-24 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-5">
-              Fast, Honest Plumbing — Day or Night.
+              Fast, Honest Plumbing. Day or Night.
             </h1>
             <p className="text-white/80 text-lg mb-8 max-w-lg">
               Licensed, insured, and trusted by 5,000+ Nashville homes.
@@ -59,7 +59,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          {/* Right side — hero image */}
+          {/* Right side hero image */}
           <div className="md:w-[45%] relative min-h-[350px] md:min-h-0">
             <div className="md:absolute md:-left-8 md:top-8 md:bottom-8 md:right-8 relative h-[350px] md:h-auto rounded-2xl overflow-hidden shadow-2xl">
               <Image
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services — Alternating Rows */}
+      {/* Services Alternating Rows */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-[#1B3A5C] text-center mb-12">Our Services</h2>
