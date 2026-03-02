@@ -6,7 +6,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-[100]">
       {/* Top strip */}
       <div className="bg-[#1B3A5C] text-white text-center text-sm py-1.5">
         24/7 Emergency Service — Call{" "}
